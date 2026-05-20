@@ -188,3 +188,14 @@ footer p {
     padding: 70px 0;
   }
 }
+
+.unidad {
+  margin-bottom: 70px;
+}
+
+.unidad h3 {
+  color: var(--azul);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+}
