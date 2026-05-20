@@ -1,0 +1,190 @@
+:root {
+  --fondo: #0f172a;
+  --fondo-secundario: #111827;
+  --tarjeta: #1e293b;
+  --texto: #e5e7eb;
+  --texto-suave: #cbd5e1;
+  --azul: #38bdf8;
+  --azul-oscuro: #0284c7;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+.navbar {
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+  color: var(--azul) !important;
+}
+
+.nav-link {
+  color: var(--texto-suave) !important;
+}
+
+.nav-link:hover {
+  color: var(--azul) !important;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding-top: 80px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  color: var(--azul);
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: var(--texto-suave);
+  font-size: 1.1rem;
+}
+
+.etiqueta {
+  color: var(--azul);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--azul-oscuro);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--azul);
+  color: #0f172a;
+}
+
+.seccion {
+  padding: 90px 0;
+}
+
+.fondo-alterno {
+  background-color: var(--fondo-secundario);
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: var(--azul);
+}
+
+#sobre-mi p {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  color: var(--texto-suave);
+  font-size: 1.1rem;
+}
+
+.evidencia-card {
+  background-color: var(--tarjeta);
+  color: var(--texto);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evidencia-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+}
+
+.evidencia-card .card-title {
+  color: var(--azul);
+  font-weight: bold;
+}
+
+.evidencia-card .card-text {
+  color: var(--texto-suave);
+}
+
+.badge {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: var(--azul);
+  padding: 8px 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tecnologias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+}
+
+.tecnologias-grid span {
+  background-color: var(--tarjeta);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.tecnologias-grid span:hover {
+  background-color: var(--azul-oscuro);
+  transform: scale(1.05);
+}
+
+#contacto a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 25px;
+  color: var(--texto-suave);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .seccion {
+    padding: 70px 0;
+  }
+}
