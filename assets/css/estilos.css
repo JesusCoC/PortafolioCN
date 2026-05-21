@@ -291,4 +291,150 @@ footer p {
   .datos-portada {
     text-align: center;
   }
+
+  .subtitulo-seccion {
+  max-width: 850px;
+  margin: -25px auto 45px;
+  text-align: center;
+  color: var(--texto-suave);
+  line-height: 1.7;
+}
+
+.evidencias-accordion {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 22px;
+}
+
+.accordion-button {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  border-radius: 18px !important;
+  padding: 22px 26px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #0284c7, #0f172a);
+  color: white;
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  padding: 30px 5px 10px;
+}
+
+.evidencia-pro {
+  height: 100%;
+  background: rgba(30, 41, 59, 0.92);
+  border: 1px solid var(--borde);
+  border-radius: 22px;
+  padding: 26px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.evidencia-pro::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--azul);
+}
+
+.evidencia-pro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(56, 189, 248, 0.14);
+}
+
+.evidencia-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.evidencia-header h4 {
+  color: var(--azul);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.fecha {
+  background-color: rgba(56, 189, 248, 0.12);
+  color: var(--azul);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.evidencia-pro p {
+  color: var(--texto-suave);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.tags span {
+  background-color: rgba(56, 189, 248, 0.14);
+  color: var(--azul);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+}
+
+.btn-evidencia {
+  background-color: transparent;
+  color: var(--azul);
+  border: 1px solid var(--azul);
+  border-radius: 12px;
+  padding: 10px 18px;
+  transition: 0.3s ease;
+}
+
+.btn-evidencia:hover {
+  background-color: var(--azul);
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .evidencia-header {
+    flex-direction: column;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 18px;
+  }
+}
 }

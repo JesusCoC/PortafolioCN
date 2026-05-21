@@ -148,173 +148,291 @@
   <div class="container">
     <h2 class="titulo-seccion">Evidencias de Aprendizaje</h2>
 
-    <!-- UNIDAD 1 -->
-    <div id="unidad1" class="unidad">
-      <h3 class="titulo-unidad">Unidad 1: Fundamentos del Cómputo en la Nube</h3>
+    <p class="subtitulo-seccion">
+      Las evidencias se encuentran organizadas por unidades. Cada apartado incluye la descripción,
+      fecha, resultados, reflexión personal y anexos correspondientes.
+    </p>
 
-      <div class="row g-4">
+    <div class="accordion evidencias-accordion" id="accordionEvidencias">
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Características del Cómputo en la Nube</h5>
-              <p><strong>Descripción:</strong> Síntesis sobre escalabilidad, elasticidad, disponibilidad y servicios en la nube.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se comprendieron las características principales de los servicios en la nube.</p>
-              <p><strong>Reflexión:</strong> Esta actividad ayudó a identificar por qué la nube es importante para las empresas actuales.</p>
-              <span class="badge">Cloud</span>
-              <span class="badge">Investigación</span>
-              <a href="evidencias/unidad1/caracteristicas-nube.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
+      <!-- UNIDAD 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#unidad1">
+            Unidad 1: Fundamentos del Cómputo en la Nube
+          </button>
+        </h2>
+
+        <div id="unidad1" class="accordion-collapse collapse show" data-bs-parent="#accordionEvidencias">
+          <div class="accordion-body">
+
+            <div class="row g-4">
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Características del Cómputo en la Nube</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Síntesis sobre escalabilidad, elasticidad, disponibilidad y servicios en la nube.</p>
+                  <p><strong>Resultados:</strong> Se comprendieron las características principales de los servicios en la nube.</p>
+                  <p><strong>Reflexión:</strong> Esta actividad ayudó a identificar por qué la nube es importante para las empresas actuales.</p>
+
+                  <div class="tags">
+                    <span>Cloud</span>
+                    <span>Investigación</span>
+                    <span>Fundamentos</span>
+                  </div>
+
+                  <a href="evidencias/unidad1/caracteristicas-nube.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Modelos de Servicio</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Actividad sobre IaaS, PaaS y SaaS.</p>
+                  <p><strong>Resultados:</strong> Se identificaron las diferencias entre los principales modelos de servicio.</p>
+                  <p><strong>Reflexión:</strong> Permitió entender qué tipo de servicio conviene usar según cada necesidad.</p>
+
+                  <div class="tags">
+                    <span>IaaS</span>
+                    <span>PaaS</span>
+                    <span>SaaS</span>
+                  </div>
+
+                  <a href="evidencias/unidad1/modelos-servicio.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Modelos de Servicio</h5>
-              <p><strong>Descripción:</strong> Actividad sobre IaaS, PaaS y SaaS.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se identificaron las diferencias entre los principales modelos de servicio.</p>
-              <p><strong>Reflexión:</strong> Permitió entender qué tipo de servicio conviene usar según cada necesidad.</p>
-              <span class="badge">IaaS</span>
-              <span class="badge">PaaS</span>
-              <span class="badge">SaaS</span>
-              <a href="evidencias/unidad1/modelos-servicio.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <!-- UNIDAD 2 -->
-    <div id="unidad2" class="unidad">
-      <h3 class="titulo-unidad">Unidad 2: Modelos y Herramientas de Nube</h3>
+      <!-- UNIDAD 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#unidad2">
+            Unidad 2: Modelos y Herramientas de Nube
+          </button>
+        </h2>
 
-      <div class="row g-4">
+        <div id="unidad2" class="accordion-collapse collapse" data-bs-parent="#accordionEvidencias">
+          <div class="accordion-body">
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Máquinas Virtuales</h5>
-              <p><strong>Descripción:</strong> Práctica relacionada con el uso de máquinas virtuales y virtualización.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se comprendió la utilidad de las máquinas virtuales en entornos de prueba.</p>
-              <p><strong>Reflexión:</strong> Ayudó a entender cómo se pueden aislar sistemas y recursos.</p>
-              <span class="badge">Virtualización</span>
-              <span class="badge">VM</span>
-              <a href="evidencias/unidad2/maquinas-virtuales.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
+            <div class="row g-4">
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Máquinas Virtuales</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Práctica relacionada con el uso de máquinas virtuales y virtualización.</p>
+                  <p><strong>Resultados:</strong> Se comprendió la utilidad de las máquinas virtuales en entornos de prueba.</p>
+                  <p><strong>Reflexión:</strong> Ayudó a entender cómo se pueden aislar sistemas y recursos.</p>
+
+                  <div class="tags">
+                    <span>Virtualización</span>
+                    <span>VM</span>
+                  </div>
+
+                  <a href="evidencias/unidad2/maquinas-virtuales.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Contenedores vs Máquinas Virtuales</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Comparación entre contenedores y máquinas virtuales.</p>
+                  <p><strong>Resultados:</strong> Se analizaron diferencias de aislamiento, rendimiento y uso de recursos.</p>
+                  <p><strong>Reflexión:</strong> Permitió comprender cuándo conviene usar cada tecnología.</p>
+
+                  <div class="tags">
+                    <span>Docker</span>
+                    <span>Containers</span>
+                  </div>
+
+                  <a href="evidencias/unidad2/contenedores-vs-vm.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Contenedores vs Máquinas Virtuales</h5>
-              <p><strong>Descripción:</strong> Comparación entre contenedores y máquinas virtuales.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se analizaron diferencias de aislamiento, rendimiento y uso de recursos.</p>
-              <p><strong>Reflexión:</strong> La evidencia permitió comprender cuándo conviene usar cada tecnología.</p>
-              <span class="badge">Docker</span>
-              <span class="badge">Containers</span>
-              <a href="evidencias/unidad2/contenedores-vs-vm.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <!-- UNIDAD 3 -->
-    <div id="unidad3" class="unidad">
-      <h3 class="titulo-unidad">Unidad 3: Servicios y Despliegue en la Nube</h3>
+      <!-- UNIDAD 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#unidad3">
+            Unidad 3: Servicios y Despliegue en la Nube
+          </button>
+        </h2>
 
-      <div class="row g-4">
+        <div id="unidad3" class="accordion-collapse collapse" data-bs-parent="#accordionEvidencias">
+          <div class="accordion-body">
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Máquina Virtual en Azure</h5>
-              <p><strong>Descripción:</strong> Creación y configuración de una máquina virtual en Microsoft Azure.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se logró implementar una máquina virtual con servicios básicos.</p>
-              <p><strong>Reflexión:</strong> Esta práctica permitió comprender el despliegue de infraestructura en la nube.</p>
-              <span class="badge">Azure</span>
-              <span class="badge">Linux</span>
-              <a href="evidencias/unidad3/azure-vm.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
+            <div class="row g-4">
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Máquina Virtual en Azure</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Creación y configuración de una máquina virtual en Microsoft Azure.</p>
+                  <p><strong>Resultados:</strong> Se logró implementar una máquina virtual con servicios básicos.</p>
+                  <p><strong>Reflexión:</strong> Permitió comprender el despliegue de infraestructura en la nube.</p>
+
+                  <div class="tags">
+                    <span>Azure</span>
+                    <span>Linux</span>
+                    <span>VM</span>
+                  </div>
+
+                  <a href="evidencias/unidad3/azure-vm.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>App Service y MySQL Flexible Server</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Implementación de servicios administrados en Azure.</p>
+                  <p><strong>Resultados:</strong> Se identificaron ventajas de usar servicios administrados.</p>
+                  <p><strong>Reflexión:</strong> Ayudó a comprender cómo la nube facilita el mantenimiento de aplicaciones.</p>
+
+                  <div class="tags">
+                    <span>App Service</span>
+                    <span>MySQL</span>
+                    <span>Azure</span>
+                  </div>
+
+                  <a href="evidencias/unidad3/app-service-mysql.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">App Service y MySQL Flexible Server</h5>
-              <p><strong>Descripción:</strong> Implementación de servicios administrados en Azure.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se identificaron ventajas de usar servicios administrados en lugar de configurar todo manualmente.</p>
-              <p><strong>Reflexión:</strong> Ayudó a comprender cómo la nube facilita el mantenimiento de aplicaciones.</p>
-              <span class="badge">App Service</span>
-              <span class="badge">MySQL</span>
-              <a href="evidencias/unidad3/app-service-mysql.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <!-- UNIDAD 4 -->
-    <div id="unidad4" class="unidad">
-      <h3 class="titulo-unidad">Unidad 4: Administración y Contenedores</h3>
+      <!-- UNIDAD 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#unidad4">
+            Unidad 4: Administración y Contenedores
+          </button>
+        </h2>
 
-      <div class="row g-4">
+        <div id="unidad4" class="accordion-collapse collapse" data-bs-parent="#accordionEvidencias">
+          <div class="accordion-body">
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Pruebas con Docker</h5>
-              <p><strong>Descripción:</strong> Ejecución de contenedores y prueba de puertos.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se comprendió el funcionamiento básico de Docker para desplegar servicios.</p>
-              <p><strong>Reflexión:</strong> Esta evidencia fortaleció el aprendizaje sobre entornos aislados y portabilidad.</p>
-              <span class="badge">Docker</span>
-              <span class="badge">Puertos</span>
-              <a href="evidencias/unidad4/docker-pruebas.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
+            <div class="row g-4">
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Pruebas con Docker</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Ejecución de contenedores y prueba de puertos.</p>
+                  <p><strong>Resultados:</strong> Se comprendió el funcionamiento básico de Docker para desplegar servicios.</p>
+                  <p><strong>Reflexión:</strong> Fortaleció el aprendizaje sobre entornos aislados y portabilidad.</p>
+
+                  <div class="tags">
+                    <span>Docker</span>
+                    <span>Puertos</span>
+                    <span>Contenedores</span>
+                  </div>
+
+                  <a href="evidencias/unidad4/docker-pruebas.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
-
       </div>
-    </div>
 
-    <!-- UNIDAD 5 -->
-    <div id="unidad5" class="unidad">
-      <h3 class="titulo-unidad">Unidad 5: Proyecto e Integración Final</h3>
+      <!-- UNIDAD 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#unidad5">
+            Unidad 5: Proyecto e Integración Final
+          </button>
+        </h2>
 
-      <div class="row g-4">
+        <div id="unidad5" class="accordion-collapse collapse" data-bs-parent="#accordionEvidencias">
+          <div class="accordion-body">
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card evidencia-card">
-            <div class="card-body">
-              <h5 class="card-title">Portafolio Web de Evidencias</h5>
-              <p><strong>Descripción:</strong> Desarrollo de sitio web estático para presentar evidencias del curso.</p>
-              <p><strong>Fecha:</strong> Mayo 2026</p>
-              <p><strong>Resultados:</strong> Se integraron evidencias, anexos y reflexiones en una página web desplegable.</p>
-              <p><strong>Reflexión:</strong> El proyecto permitió aplicar organización, diseño web y despliegue en la nube.</p>
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">Vercel</span>
-              <a href="evidencias/unidad5/portafolio-final.pdf" target="_blank" class="btn btn-outline-light mt-3">Ver anexo</a>
+            <div class="row g-4">
+
+              <div class="col-lg-6">
+                <div class="evidencia-pro">
+                  <div class="evidencia-header">
+                    <h4>Portafolio Web de Evidencias</h4>
+                    <span class="fecha">Mayo 2026</span>
+                  </div>
+
+                  <p><strong>Descripción:</strong> Desarrollo de sitio web estático para presentar evidencias del curso.</p>
+                  <p><strong>Resultados:</strong> Se integraron evidencias, anexos y reflexiones en una página web desplegable.</p>
+                  <p><strong>Reflexión:</strong> Permitió aplicar organización, diseño web y despliegue en la nube.</p>
+
+                  <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Vercel</span>
+                  </div>
+
+                  <a href="evidencias/unidad5/portafolio-final.pdf" target="_blank" class="btn btn-evidencia">
+                    Ver anexo
+                  </a>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
-
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
