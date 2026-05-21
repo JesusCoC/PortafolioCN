@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".nav-link");
+  const menu = document.querySelector(".navbar-collapse");
 
   links.forEach(function (link) {
     link.addEventListener("click", function () {
-      const menu = document.querySelector(".navbar-collapse");
-
       if (menu.classList.contains("show")) {
         const bootstrapMenu = new bootstrap.Collapse(menu);
         bootstrapMenu.hide();
@@ -12,11 +11,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const cards = document.querySelectorAll(".evidencia-card");
+  const sections = document.querySelectorAll("section, header");
+  const navLinks = document.querySelectorAll(".nav-link");
 
-  cards.forEach(function (card) {
-    card.addEventListener("mouseenter", function () {
-      card.style.cursor = "pointer";
+  window.addEventListener("scroll", function () {
+    let current = "";
+
+    sections.forEach(function (section) {
+      const sectionTop = section.offsetTop - 120;
+
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(function (link) {
+      link.classList.remove("active");
+
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
     });
   });
 });
