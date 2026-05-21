@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let current = "";
 
     sections.forEach(function (section) {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 130;
 
       if (window.scrollY >= sectionTop) {
         current = section.getAttribute("id");

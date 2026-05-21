@@ -17,14 +17,10 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background-color: var(--fondo);
   color: var(--texto);
 }
-
-/* ========================= */
-/* NAVBAR */
-/* ========================= */
 
 .navbar {
   background-color: rgba(15, 23, 42, 0.96);
@@ -42,24 +38,18 @@ body {
   transition: 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--azul) !important;
 }
-
-/* ========================= */
-/* PORTADA */
-/* ========================= */
 
 .portada {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 100px;
-
   background:
-    radial-gradient(circle at top left,
-      rgba(56, 189, 248, 0.16),
-      transparent 30%),
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 30%),
     linear-gradient(135deg, #020617, #0f172a, #111827);
 }
 
@@ -81,10 +71,11 @@ body {
 }
 
 .portada-contenido h1 {
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 900;
   color: var(--azul);
   margin-bottom: 18px;
+  letter-spacing: -2px;
 }
 
 .portada-contenido h2 {
@@ -121,7 +112,7 @@ body {
   background: linear-gradient(135deg, #0284c7, #38bdf8);
   border: none;
   color: #020617;
-  font-weight: bold;
+  font-weight: 800;
   border-radius: 14px;
   padding: 12px 26px;
 }
@@ -130,10 +121,6 @@ body {
   transform: translateY(-2px);
   color: #020617;
 }
-
-/* ========================= */
-/* SECCIONES */
-/* ========================= */
 
 .seccion {
   padding: 100px 0;
@@ -146,9 +133,10 @@ body {
 .titulo-seccion {
   text-align: center;
   color: var(--azul);
-  font-weight: 800;
-  margin-bottom: 50px;
-  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 55px;
+  font-size: 3rem;
+  letter-spacing: -1px;
 }
 
 .contenido-texto {
@@ -164,10 +152,6 @@ body {
   font-size: 1.05rem;
 }
 
-/* ========================= */
-/* ÍNDICE */
-/* ========================= */
-
 .indice-box {
   max-width: 850px;
   margin: auto;
@@ -181,7 +165,7 @@ body {
   display: block;
   color: var(--texto);
   text-decoration: none;
-  padding: 15px;
+  padding: 17px 15px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: 0.3s ease;
 }
@@ -197,13 +181,9 @@ body {
 
 .indice-box span {
   color: var(--azul);
-  font-weight: bold;
+  font-weight: 800;
   margin-right: 10px;
 }
-
-/* ========================= */
-/* OBJETIVOS */
-/* ========================= */
 
 .objetivos-grid {
   display: grid;
@@ -233,10 +213,6 @@ body {
   line-height: 1.8;
 }
 
-/* ========================= */
-/* EVIDENCIAS */
-/* ========================= */
-
 .subtitulo-seccion {
   max-width: 900px;
   margin: -20px auto 45px;
@@ -249,8 +225,6 @@ body {
   max-width: 1180px;
   margin: auto;
 }
-
-/* Bootstrap Override */
 
 .accordion {
   --bs-accordion-bg: transparent;
@@ -275,30 +249,21 @@ body {
 .accordion-button {
   background: linear-gradient(135deg, #1e293b, #0f172a) !important;
   color: white !important;
-
   border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: 22px !important;
-
   padding: 24px 30px;
-
   font-weight: 700;
   font-size: 1.08rem;
-
   display: flex;
   align-items: center;
   gap: 18px;
-
   box-shadow: none !important;
 }
 
 .accordion-button:not(.collapsed) {
-  background:
-    linear-gradient(135deg, #0f172a, #164e63) !important;
-
+  background: linear-gradient(135deg, #0f172a, #164e63) !important;
   border-color: rgba(56, 189, 248, 0.45);
-
-  box-shadow:
-    0 18px 45px rgba(56, 189, 248, 0.12) !important;
+  box-shadow: 0 18px 45px rgba(56, 189, 248, 0.12) !important;
 }
 
 .accordion-button:focus {
@@ -312,21 +277,14 @@ body {
 .numero-unidad {
   width: 48px;
   height: 48px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 14px;
-
   background: rgba(56, 189, 248, 0.12);
-
   border: 1px solid rgba(56, 189, 248, 0.3);
-
   color: var(--azul);
-
   font-weight: 800;
-
   flex-shrink: 0;
 }
 
@@ -335,74 +293,40 @@ body {
 }
 
 .accordion-body {
-  background:
-    linear-gradient(180deg, rgba(15, 23, 42, 0.95),
-    rgba(2, 6, 23, 0.98));
-
-  border:
-    1px solid rgba(56, 189, 248, 0.12);
-
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.98));
+  border: 1px solid rgba(56, 189, 248, 0.12);
   border-top: none;
-
   border-radius: 0 0 24px 24px;
-
   padding: 35px;
 }
 
-/* ========================= */
-/* TARJETAS */
-/* ========================= */
-
 .evidencia-card-pro {
   height: 100%;
-
-  background:
-    linear-gradient(180deg,
-      rgba(30, 41, 59, 0.98),
-      rgba(15, 23, 42, 0.98));
-
-  border:
-    1px solid rgba(148, 163, 184, 0.12);
-
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.98));
+  border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: 24px;
-
   padding: 28px;
-
   position: relative;
-
   overflow: hidden;
-
-  box-shadow:
-    0 12px 30px rgba(2, 6, 23, 0.35);
-
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.35);
   transition: 0.3s ease;
 }
 
 .evidencia-card-pro::before {
   content: "";
-
   position: absolute;
-
   top: 0;
   left: 28px;
   right: 28px;
-
   height: 4px;
-
-  background:
-    linear-gradient(90deg, var(--azul), transparent);
-
+  background: linear-gradient(90deg, var(--azul), transparent);
   border-radius: 999px;
 }
 
 .evidencia-card-pro:hover {
   transform: translateY(-8px);
-
-  border-color:
-    rgba(56, 189, 248, 0.35);
-
-  box-shadow:
-    0 22px 50px rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 22px 50px rgba(56, 189, 248, 0.12);
 }
 
 .evidencia-top {
@@ -410,74 +334,53 @@ body {
   justify-content: space-between;
   gap: 18px;
   align-items: flex-start;
-
   margin-bottom: 22px;
 }
 
 .tipo-evidencia {
   color: var(--azul);
-
   text-transform: uppercase;
-
   letter-spacing: 1.5px;
-
   font-size: 0.75rem;
-
   font-weight: 800;
-
   margin-bottom: 10px;
 }
 
 .evidencia-top h4 {
   color: white;
-
   font-size: 1.35rem;
-
   font-weight: 800;
-
   margin: 0;
 }
 
 .fecha-evidencia {
-  background-color:
-    rgba(56, 189, 248, 0.12);
-
-  border:
-    1px solid rgba(56, 189, 248, 0.25);
-
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   color: var(--azul);
-
   padding: 8px 14px;
-
   border-radius: 999px;
-
   font-size: 0.82rem;
-
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .evidencia-info {
-  background-color:
-    rgba(2, 6, 23, 0.28);
-
-  border:
-    1px solid rgba(148, 163, 184, 0.11);
-
+  background-color: rgba(2, 6, 23, 0.28);
+  border: 1px solid rgba(148, 163, 184, 0.11);
   border-radius: 18px;
-
   padding: 22px;
-
   margin-bottom: 24px;
 }
 
 .evidencia-info p {
   color: var(--texto-suave);
-
   line-height: 1.7;
-
   font-size: 0.96rem;
-
   margin-bottom: 18px;
+}
+
+.evidencia-info p:last-child {
+  margin-bottom: 0;
 }
 
 .evidencia-info strong {
@@ -492,10 +395,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* ========================= */
-/* TAGS */
-/* ========================= */
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -503,58 +402,31 @@ body {
 }
 
 .tags span {
-  background-color:
-    rgba(56, 189, 248, 0.12);
-
-  border:
-    1px solid rgba(56, 189, 248, 0.24);
-
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.24);
   color: var(--azul);
-
   padding: 7px 12px;
-
   border-radius: 999px;
-
   font-size: 0.8rem;
-
   font-weight: 700;
 }
 
-/* ========================= */
-/* BOTÓN */
-/* ========================= */
-
 .btn-evidencia {
-  background:
-    linear-gradient(135deg, #0284c7, #38bdf8);
-
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
   color: #020617;
-
   border: none;
-
   border-radius: 14px;
-
   padding: 10px 18px;
-
   font-weight: 800;
-
   text-decoration: none;
-
   transition: 0.3s ease;
 }
 
 .btn-evidencia:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 10px 24px rgba(56, 189, 248, 0.22);
-
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.22);
   color: #020617;
 }
-
-/* ========================= */
-/* FOOTER */
-/* ========================= */
 
 footer {
   background-color: #020617;
@@ -567,12 +439,7 @@ footer p {
   margin: 0;
 }
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
-
 @media (max-width: 992px) {
-
   .objetivos-grid {
     grid-template-columns: 1fr;
   }
@@ -583,7 +450,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-
   .logos {
     justify-content: center;
     flex-wrap: wrap;
@@ -600,6 +466,10 @@ footer p {
 
   .portada-contenido h2 {
     font-size: 1.15rem;
+  }
+
+  .titulo-seccion {
+    font-size: 2.3rem;
   }
 
   .seccion {
