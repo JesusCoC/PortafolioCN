@@ -437,4 +437,243 @@ footer p {
     padding: 18px;
   }
 }
+/* ========================= */
+/* EVIDENCIAS PROFESIONALES */
+/* ========================= */
+
+.subtitulo-seccion {
+  max-width: 900px;
+  margin: -25px auto 45px;
+  text-align: center;
+  color: var(--texto-suave);
+  line-height: 1.7;
+}
+
+.evidencias-accordion {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.accordion-header {
+  border-radius: 20px;
+}
+
+.accordion-button {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: var(--texto);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-radius: 20px !important;
+  padding: 22px 28px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #0f172a, #164e63);
+  color: #ffffff;
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 18px 45px rgba(56, 189, 248, 0.12);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--azul);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.numero-unidad {
+  background: rgba(56, 189, 248, 0.16);
+  color: var(--azul);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.accordion-body {
+  background-color: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  border-top: none;
+  border-radius: 0 0 24px 24px;
+  padding: 32px;
+}
+
+/* Tarjeta individual de cada evidencia */
+.evidencia-card-pro {
+  height: 100%;
+  background:
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.96));
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 24px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.35);
+  transition: all 0.3s ease;
+}
+
+/* Línea decorativa superior */
+.evidencia-card-pro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: 28px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--azul), transparent);
+  border-radius: 999px;
+}
+
+.evidencia-card-pro:hover {
+  transform: translateY(-7px);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 22px 50px rgba(56, 189, 248, 0.12);
+}
+
+.evidencia-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.tipo-evidencia {
+  color: var(--azul);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.evidencia-top h4 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.fecha-evidencia {
+  background-color: rgba(56, 189, 248, 0.12);
+  color: var(--azul);
+  border: 1px solid rgba(56, 189, 248, 0.26);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.evidencia-info {
+  background-color: rgba(2, 6, 23, 0.28);
+  border: 1px solid rgba(148, 163, 184, 0.11);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.evidencia-info p {
+  color: var(--texto-suave);
+  line-height: 1.65;
+  font-size: 0.96rem;
+  margin-bottom: 16px;
+}
+
+.evidencia-info p:last-child {
+  margin-bottom: 0;
+}
+
+.evidencia-info strong {
+  color: #ffffff;
+}
+
+.evidencia-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background-color: rgba(56, 189, 248, 0.12);
+  color: var(--azul);
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.btn-evidencia {
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  color: #020617;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 18px;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.btn-evidencia:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.22);
+  color: #020617;
+}
+
+@media (max-width: 768px) {
+  .accordion-button {
+    padding: 18px;
+    font-size: 0.95rem;
+    gap: 12px;
+  }
+
+  .numero-unidad {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-body {
+    padding: 22px;
+  }
+
+  .evidencia-top {
+    flex-direction: column;
+  }
+
+  .evidencia-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .btn-evidencia {
+    width: 100%;
+    text-align: center;
+  }
+}
 }
